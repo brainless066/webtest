@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
-
 *{
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: Arial;
 }
 
 input{
-    font-family: Arial;
+    font-family: 'Fuzzy Bubbles', cursive;
 }
