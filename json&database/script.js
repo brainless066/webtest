@@ -1,5 +1,8 @@
-const js = require('js');
+let testData = JSON.parse(JSON.stringify(Params));
+console.log(testData[0].url);
 
-console.log(
-    fs.readFileSync('data.json').toString()
-)
+function ChnImg(){
+	var random = Math.floor(Math.random() * 3);;
+	document.getElementById("imgId").src = testData[random].url;
+	
+}
