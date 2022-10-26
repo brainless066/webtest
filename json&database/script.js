@@ -1,8 +1,8 @@
 let testData = JSON.parse(JSON.stringify(Params));
 console.log(testData[0].url);
-
+var random = 0;
 function ChnImg(){
-	var random = Math.floor(Math.random() * 3);;
+	random = Math.floor(Math.random() * 3);;
 	document.getElementById("imgId").src = testData[random].url;
-	
+
 }
