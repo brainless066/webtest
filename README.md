@@ -2,7 +2,7 @@
 my own practice with web
 
 
-#json&database
+# json&database
 -1. scrap the data from web
 
 -2. use cool website with collected data
