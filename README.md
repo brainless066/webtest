@@ -1,3 +1,2 @@
 # webtest
-testweb
-bruh
+my own practice with web
