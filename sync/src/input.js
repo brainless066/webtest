@@ -1,19 +1,21 @@
 "use strict"
 const socket = io();
+let globalButton = document.getElementById("submit");
 
 console.log("console");
 
-socket.emit("chatting", "from front");
+socket.emit("start", "startSocket");
 
-document.getElementById("submit").onclick = function(event) {
+globalButton.onclick = function(event) {
     alert("Submit button is clicked!");
     socket.emit("chatting", "addNum");
 }
 
 
-
 socket.on("chatting",(data)=>{
     console.log(data);
+    globalButton.innerText = data;
 });
+
 
 

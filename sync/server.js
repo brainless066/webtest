@@ -18,8 +18,12 @@ io.on("connection",(socket)=>{
         console.log(data);
         cnt++;
         console.log(cnt);
-        socket.emit(cnt);
+        io.emit("chatting", cnt);
+    })
+    socket.on("start",(data)=>{
+        console.log(data);
     })
 })
+
 
 server.listen(PORT, ()=> console.log('running'));
